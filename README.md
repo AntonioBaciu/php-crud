@@ -15,13 +15,13 @@ In this assigment you will end up with at least 3 models and 3 controllers, but 
 
 ## Model & Loader
 
-Create a model and a loader for **Class, Student, Teacher & CSV.**
+- Create a model and a loader for **Class, Student, Teacher & CSV.**
 
-Create a search model & loader ( search by name functionality ).
+- Create a search model & loader ( search by name functionality ).
 
 ## Controller:
 
-Create a controller for **Class, Homepage, Search, Student & Teacher.**
+- Create a controller for **Class, Homepage, Search, Student & Teacher.**
 
 ## View:
 
