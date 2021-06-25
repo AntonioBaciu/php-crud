@@ -6,7 +6,7 @@ You will use the MVC structure provided in the [PHP MVC Boilerplate](https://git
 
 In this assigment you will end up with at least 3 models and 3 controllers, but you could end up with more. Model the software how you want it!
 
-# To do:
+## To do:
 ### Database:
 
 - Create and import the database.
