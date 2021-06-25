@@ -58,7 +58,6 @@ private array $studentArray = [];
         $DB = new DataBase();
         $conn = $DB->connect();
 
-//        $id=$student->getid();
         $id=$conn->lastInsertId();
         $first_name=$student->getfirst_name();
         $last_name=$student->getlast_name();
@@ -69,9 +68,7 @@ private array $studentArray = [];
                 VALUES ('$id', '$first_name', '$last_name', '$email', '$classID')";
         // use exec() because no results are returned
         $conn->exec($sql);
-        //echo "New record created successfully";
     } catch(PDOException $e) {
-        //echo $sql . "<br>" . $e->getMessage();
     }
 
     $conn = null;
@@ -92,7 +89,6 @@ private array $studentArray = [];
             $conn->exec($sql);
 
         } catch (PDOException $e) {
-            //echo $sql . "<br>" . $e->getMessage();
         }
         $conn = null;
     }
@@ -109,7 +105,6 @@ private array $studentArray = [];
             $conn->exec($sql);
 
         } catch (PDOException $e) {
-            //echo $sql . "<br>" . $e->getMessage();
         }
         $conn = null;
     }

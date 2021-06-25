@@ -84,7 +84,6 @@ class TeacherController {
                         array_push($list, array($teacher->getfirst_name(), $teacher->getlast_name(), $teacher->getemail()));
                     }
                     $export->export($list, $file);
-                    //require 'View/studentOverview.php';
 
                     header('Content-Description: File Transfer');
                     header('Content-Disposition: attachment; filename='.basename($file));
@@ -107,4 +106,3 @@ class TeacherController {
     }
 
 }
-

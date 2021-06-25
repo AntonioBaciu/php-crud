@@ -6,8 +6,6 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 require 'includes/header.php' ?>
-<!-- this is the view, try to put only simple if's and loops here.
-    Anything complex should be calculated in the model -->
 
 <h4>Create New Student</h4>
 <?php if (isset($message)): ?>
@@ -40,17 +38,4 @@ require 'includes/header.php' ?>
 
 </form>
 
-
-<!---->
-<!--    <style>-->
-<!--        label {-->
-<!--            cursor: pointer;-->
-<!--        }-->
-<!--        label {-->
-<!--            display: block;-->
-<!--        }-->
-<!--        form#create-student {-->
-<!--            margin-left: 10px;-->
-<!--        }-->
-<!--    </style>-->
 <?php require 'includes/footer.php' ?>

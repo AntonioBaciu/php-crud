@@ -39,7 +39,6 @@ class TeacherLoader{
             $DB = new DataBase();
             $conn = $DB->connect();
 
-//            $id=$teacher->getid();
             $id=$conn->lastInsertId();
             $first_name=$teacher->getfirst_name();
             $last_name=$teacher->getlast_name();
@@ -49,9 +48,7 @@ class TeacherLoader{
                 VALUES ('$id', '$first_name', '$last_name', '$email')";
             // use exec() because no results are returned
             $conn->exec($sql);
-            //echo "New record created successfully";
         } catch(PDOException $e) {
-            //echo $sql . "<br>" . $e->getMessage();
         }
 
         $conn = null;
@@ -92,7 +89,7 @@ class TeacherLoader{
             $conn->exec($sql);
 
         } catch (PDOException $e) {
-            //echo $sql . "<br>" . $e->getMessage();
+
         }
         $conn = null;
     }
@@ -108,7 +105,7 @@ class TeacherLoader{
             $conn->exec($sql);
 
         } catch (PDOException $e) {
-            //echo $sql . "<br>" . $e->getMessage();
+
         }
         $conn = null;
     }

@@ -70,7 +70,6 @@ class StudentController
                         array_push($list, array($student->getfirst_name(), $student->getlast_name(), $student->getemail()));
                     }
                     $export->export($list,$file);
-                    //require 'View/studentOverview.php';
 
                     header('Content-Description: File Transfer');
                     header('Content-Disposition: attachment; filename='.basename($file));
