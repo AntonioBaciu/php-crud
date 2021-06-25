@@ -6,6 +6,21 @@ You will use the MVC structure provided in the [PHP MVC Boilerplate](https://git
 
 In this assigment you will end up with at least 3 models and 3 controllers, but you could end up with more. Model the software how you want it!
 
+## Features
+
+- CRUD applies to Teachers, Classes & Students
+- A teacher cannot be deleted if he has a class assigned
+- Info is displayed in a table on the web page
+- Teacher, Class & Student are linked to each other for easy navigation (Info Button → Details Section)
+- Find a teacher or student by searching their name
+- Export the data in .csv format
+
+### Important
+
+To **create** and assign people to classrooms you must create a **Teacher** first, 
+
+then a **Classroom** and then a **Student**.
+
 ## To do:
 ### Database:
 
